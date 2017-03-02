@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.content.Intent;
 import android.widget.EditText;
 
 import static android.R.attr.value;
@@ -17,9 +18,18 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    public  void SendMessage (View view) {
-    Intent myIntent = new Intent(MainActivity.this, emptypage.class);
-    startActivity(myIntent);}
+    public void onButtonClick(View v)
+    {
+
+        if(v.getId() == R.id.Bdisplay)
+        {
+
+            Intent i = new Intent(MainActivity.this, Display.class);
+            startActivity(i);
+        }
+
+    }
+
 }
 
 

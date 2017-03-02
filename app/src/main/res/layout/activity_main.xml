@@ -49,12 +49,13 @@
                     android:layout_height="match_parent">
 
                     <Button
-                        android:text="Kuy Gar Yuk!"
+                        android:text="Display"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:id="@+id/button1"
+                        android:id="@+id/Bdisplay"
                         android:layout_weight="1"
-                        android:onClick="SendMessage" />
+                        android:onClick="SendMessage"
+                        tools:onClick="onButtonClick" />
 
                     <Button
                         android:text="Button 2"
